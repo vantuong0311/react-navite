@@ -1,15 +1,14 @@
-class User{
-    private name1: string;
+export class User {
+    private name:string
 
-    constructor (name: string){
-        this.name1 = name
+    constructor(name:string){
+        this.name=name
     }
-
-    public get name(): string{
-        return this.name1
+     
+    getName():string{
+        return this.name
     }
-
-    public set name(name: string){
-        this.name1 = name
+    setName(name:string):void{
+        this.name=name
     }
 }
